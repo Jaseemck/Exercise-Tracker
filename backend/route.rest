@@ -1,0 +1,42 @@
+POST http://localhost:5000/users/add
+Content-Type: application/json
+
+{
+    "username":"Harmish"
+}
+
+###
+
+GET http://localhost:5000/users
+
+###
+
+POST http://localhost:5000/exercises/add
+Content-Type: application/json
+
+{
+    "username":"Jaseem",
+    "description":"Bike ride",
+    "duration":30,
+    "date":"2020-08-29T08:32:29.263+00:00"
+}
+
+###
+
+GET http://localhost:5000/exercises/5f4a23100497db1dde746041
+
+###
+
+POST http://localhost:5000/exercises/update/5f4a23100497db1dde746041
+Content-Type: application/json
+
+{
+    "username":"Harmish",
+    "description":"Swim",
+    "duration":30,
+    "date":"2020-08-29T08:32:29.263+00:00"
+}
+
+###
+
+DELETE http://localhost:5000/exercises/5f4a23100497db1dde746041
